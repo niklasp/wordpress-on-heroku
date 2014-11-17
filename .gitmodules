@@ -1,0 +1,3 @@
+[submodule "config/public/wp-content/themes/_n"]
+	path = config/public/wp-content/themes/_n
+	url = https://github.com/niklasp/_n.git
