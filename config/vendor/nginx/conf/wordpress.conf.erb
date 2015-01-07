@@ -2,6 +2,9 @@ server {
   server_name       localhost;
   listen            <%= ENV['PORT'] %>;
 
+  rewrite ^/sitemap_index\.xml$ /index.php?sitemap=1 last;
+  rewrite ^/([^/]+?)-sitemap([0-9]+)?\.xml$ /index.php?sitemap=$1&sitemap_n=$2 last;  
+
   # Some basic cache-control for static files to be sent to the browser
   location ~ \.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml)$ {
     try_files       $uri =404;
