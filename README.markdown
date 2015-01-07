@@ -1,6 +1,7 @@
 # Wordpress on Heroku
 This is where changes to your Wordpress site are made.  Changes committed to this directory will overwrite all the vendor defaults.
 
+
 Generally, you'll be interested in adding plugins, adding themes, and modifying wordpress.conf.erb.
 ```
 └── config                # Config files
